@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+       <meta charset="utf-8">
+       <meta name="description" content= "HTML page">
+        <title>Task</title>
+        <style>
+            .box{height:400px;
+             width:700px;
+             background-color:white;
+             border:2px orange solid;
+             padding: 5px;
+            text-align: center;
+             margin-left: 430px;}
+            .s{
+               margin-bottom:10px;
+               position:relative;
+                background-color:orange;
+                width:700px;
+            }
+        body{background-image: url("Image/0.jpg"); 
+              background-repeat: no-repeat;
+              background-size: 110%;}
+            </style>
+        <script>
+            function register()
+             {
+           const name=document.getElementById('name').value;
+           const mail=document.getElementById('mail').value;
+           const phone=document.getElementById('phone').value;
+              console.log(name)
+              console.log(mail)
+              console.log(phone)
+             }
+        </script>
+    </head>
+       <body>
+           <div class="box">
+             <h3 style="color:orange">Book a call</h3>
+             <br>
+             <p>Book a call and receive a call shortly.</p>
+             <form action="#" onsubmit="register()"> 
+                 <label for=name>Name:</label> 
+                <input type="text" id="name">
+                    <br><br><br>
+                <label for=mail>Email:</label> 
+                <input type="text" id="mail">
+                     <br><br><br>
+                <label for=phone>Phone:</label> 
+                <input type="number min=0 max=9" id="phone">
+                      <br><br><br>
+                <label for=date>Time for call:</label> 
+                <input type="date" id="date">
+                        &nbsp;  &nbsp;  &nbsp;
+                <input type="time" id="date"> <br><br>
+           
+                 <input type="submit" value="Get a Call" class="s"> 
+            </form>
+         </div>
+           
+
+      </body>
+  </html>
